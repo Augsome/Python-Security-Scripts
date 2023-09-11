@@ -2,20 +2,15 @@
 
 '''
 Script aiming to build a simple port scanner.
-Also, added an ascii banner cause why not??
 '''
 
 #Importing Modules for code
 import sys
 import socket
-import pyfiglet
-
-#ascii banner cause why not??
-ascii_banner = pyfiglet.figlet_format("Augsome's \n Python \n Port Scanner!")
-print(ascii_banner)
 
 #Target machine
-ip = '192.168.1.6'
+ip = f"{sys.argv[1]}"
+#ip = '192.168.1.6'
 #ip = socket.gethostbyname(host) #Example of obtaining IP from domain name target.
 
 #Empty ports array to be populated with detected ports
