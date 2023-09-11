@@ -6,9 +6,9 @@ Simple ARP broadcast scanner utilizing Scapy.
 
 from scapy.all import *
 
-interface = "eth0"
-ip_range = "10.10.X.X/24"
-broadcastMac = "ff:ff:ff:ff:ff:ff"
+interface = "eth0" #Local Network Interface
+ip_range = "10.10.X.X/24" #Local subnet to scan
+broadcastMac = "ff:ff:ff:ff:ff:ff" # Broadcast MAC addy
 
 packet = Ether(dst=broadcastMac)/ARP(pdst = ip_range)
 
