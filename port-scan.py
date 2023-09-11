@@ -25,7 +25,7 @@ open_ports = []
 ports = range(1, 65535) #Complete range of ports
 #ports = {21,22,23,53,80,135,443,445} #Example of probing specific ports
 
-#Function attempting to connect to ports
+#Function attempting connection to ports
 def probe_port(ip, port, result = 1):
 	try:
 		sock - socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -45,7 +45,7 @@ for port in ports:
 	if response == 0:
 		open_ports.append(port)
 
-#Outcome of the port probing 
+#Results of the port probing 
 if open_ports:
 	print("The open ports are: ")
 	print(sorted(open_ports))
