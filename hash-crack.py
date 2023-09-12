@@ -8,6 +8,9 @@ Script explanation
 3. Reads values from wordlist
 4. Converts cleartext values to MD5 hashes
 5. Compares the generated MD5 hash value with the value entered by the user
+
+Hashlib allows for building hash crackers according to requirements w/support 
+for a wide range of algorithms.
 '''
 
 import hashlib
