@@ -11,6 +11,11 @@ Script explanation
 
 Hashlib allows for building hash crackers according to requirements w/support 
 for a wide range of algorithms.
+
+Hash values cannot be cracked as they do not contain the cleartext value.
+Cleartext values for hashes can only be found with a list of potential cleartext values.
+
+The script requires two inputs: the location of the wordlist and the hash value.
 '''
 
 import hashlib
