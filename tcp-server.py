@@ -11,8 +11,8 @@ def main():
         server.listen(5) # Max backlog of connections set
         print(f'[*] Listening on {IP}:{PORT}')
 
-        # When client connects, receive client socket in client and remote connectio>
-        # Then create a new thread object pointing at handle_client w/client socket >
+        # When client connects, receive client socket in client and remote connection
+        # Then create a new thread object pointing at handle_client with client socket 
         while True:
                 client, address = server.accept()
                 print(f'[*] Accepted connection from {address[0]}:{address[1]}')
