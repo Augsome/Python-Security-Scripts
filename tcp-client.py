@@ -25,9 +25,8 @@ client.close()
 Code snippet makes some serious assumptions about sockets.
 
 1st assumes that our connection will always succeed.
-2nd is the server expects us to send data first (sometimes server sends first and 
-awaits a client response.)
+2nd is that the server expects us to send data first (sometimes the server sends first and awaits a client response.)
 3rd is that the server will always return data in a timely fashion.
  '''
 
- 
+
