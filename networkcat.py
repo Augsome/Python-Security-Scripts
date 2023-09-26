@@ -128,10 +128,9 @@ if __name__ == '__main__':
 	-t specifies target IP
 	-u name of file to upload
 
-	Both senders and receivers can utilize the program so arguments
-	define whether its invoked to send or listen.
+	Both senders and receivers can utilize the program so arguments define whether its invoked to send or listen.
 
-	The -c, -e, and -u arguments imply the -l argument as they apply to listener side
+	The -c, -e, and -u arguments imply the -l argument as they apply to listener side.
 	The -t and -p arguments define the target listener.
 	'''
 	if args.listen:
