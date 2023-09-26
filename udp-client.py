@@ -14,7 +14,7 @@ client.sendto(b"AAABBBCCC", (target_host,target_port))
 
 # Receive some data
 data, addr = client.recvfrom(4096)
-# Call recvfrom() to receive UDP data back.
+# Call recvfrom() to receive the UDP data back.
 
 print(data.decode())
 client.close()
