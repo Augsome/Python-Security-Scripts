@@ -91,7 +91,7 @@ def handle(self, client_socket):
 				sys.exit()
 
 class NetCat:
-	def __init__(self, args, buffer=None): # Initialize NetCat object with command line args and buffer
+	def __init__(self, args, buffer=None): # Initialize the NetCat object with command line args and buffer
 		self.args = args 
 		self.buffer = buffer
 
